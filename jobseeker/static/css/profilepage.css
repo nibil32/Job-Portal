@@ -1,0 +1,55 @@
+body {
+    background-image: linear-gradient(to right bottom, #ff4b2b, #ff453e, #ff424e, #ff405d, #ff416c);
+}
+
+.profile-container {
+    width: 70vw;
+    max-height: 90vh;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.profile-pic {
+    margin: auto;
+    width: 180px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+hr.style2 {
+    border-top: 3px double #8c8b8b;
+    width: 150px;
+}
+
+.Input {
+    position: relative;
+}
+
+.Input-text {
+    display: block;
+    margin: 0;
+    padding: var(--inputPaddingV) var(--inputPaddingH);
+    color: inherit;
+    width: 100%;
+    font-family: inherit;
+    font-size: var(--inputFontSize);
+    font-weight: inherit;
+    line-height: var(--inputLineHeight);
+    border: none;
+    border-radius: 0.4rem;
+    transition: box-shadow var(--transitionDuration);
+}
+
+.Input-text::placeholder {
+    color: #B0BEC5;
+}
+
+.Input-text:focus {
+    outline: none;
+    box-shadow: 0.2rem 0.8rem 1.6rem var(--colorPrimary600);
+}

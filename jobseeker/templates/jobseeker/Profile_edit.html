@@ -1,0 +1,20 @@
+{% extends 'jobseeker/base.html' %}
+{%if form.errors%}
+{{form.errors}}
+{%endif%}
+{%load static%}
+
+
+{% block bodyblock %}
+
+<form action="" method="post" enctype="multipart/form-data"
+    class="bg-white m-5 p-5 w-50 rounded-3 col-lg-12 col-md-12 col-sm-12 col-12  m-5 p-5 w-50
+     rounded-3 ">
+    {%csrf_token%}
+    <p class="fw-bold fs-4 ">Update your profile</p>
+    <hr class="mb-5 w-35 border-4">
+    {{form.as_p}}
+    <button type="submit" class="btn btn-dark w-50 mt-5 mb-5">Update</button>
+</form>
+
+{% endblock %}
